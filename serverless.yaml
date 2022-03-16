@@ -12,7 +12,7 @@ functions:
     events:
       - http:
           path: /v1/etiqueta-paquete
-          method: get
+          method: post
 
 plugins:
   - serverless-offline
