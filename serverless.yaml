@@ -1,0 +1,19 @@
+service: Multi-carrier Shipping
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  profile: devProfile
+
+functions:
+  hello:
+    handler: src/index.createLabelShipping
+    events:
+      - http:
+          path: /v1/etiqueta-paquete
+          method: get
+
+plugins:
+  - serverless-offline
+
