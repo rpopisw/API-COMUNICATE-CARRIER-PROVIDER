@@ -4,7 +4,6 @@ const ErrorContants = require('./supports/error.constants')
 
 const validateRequestCreateLabelShipping = async (request) => {
     try {
-
         const address_from = Joi.object({
             name: Joi.string().required(),
             street1: Joi.string().required(),
@@ -45,13 +44,9 @@ const validateRequestCreateLabelShipping = async (request) => {
                 ).required()
             }).required(),
         }).required()
-
-
-
-        const response = await schema.validateAsync(request.body,{ abortEarly: false })
+        const response = await schema.validateAsync(request.body, { abortEarly: false })
         return response.error
     } catch (error) {
-        console.log(error.details)
         return new CustomException(
             ErrorContants.requestInvalid.code,
             ErrorContants.requestInvalid.message,
