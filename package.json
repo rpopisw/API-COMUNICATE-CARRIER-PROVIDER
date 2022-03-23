@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "serverless offline",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,5 +20,14 @@
   "homepage": "https://github.com/rpopisw/SkydropX_Developer_Challenges#readme",
   "devDependencies": {
     "serverless-offline": "^8.5.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "aws-sdk": "^2.1099.0",
+    "axios": "^0.26.1",
+    "https": "^1.0.0",
+    "joi": "^17.6.0",
+    "mysql": "^2.18.1",
+    "uuid": "^8.3.2"
   }
 }

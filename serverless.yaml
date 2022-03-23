@@ -5,14 +5,21 @@ provider:
   runtime: nodejs12.x
   lambdaHashingVersion: 20201221
   profile: devProfile
-
+  environment:
+    USERNAME_DATABASE: admin
+    PASSWORD_DATABASE: 12345678
+    NAME_DATABASE: Multi_carrier_Shipping
+    HOST_DATABASE: database-2.czwglemjvcro.us-east-1.rds.amazonaws.com
+    BUCKET_NAME: reto-skydropx
+    SECRET_ID: AKIA6KXC4TXUHMSEGHPN
+    SECRET_KEY: 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
 functions:
   hello:
     handler: src/index.createLabelShipping
     events:
       - http:
           path: /v1/etiqueta-paquete
-          method: get
+          method: post
 
 plugins:
   - serverless-offline
