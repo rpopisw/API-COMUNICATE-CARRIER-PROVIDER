@@ -20,6 +20,12 @@ functions:
       - http:
           path: /v1/etiqueta-paquete
           method: post
+  getStatusLabelShipping:
+    handler: src/controllers/LabelShipping.getStatusLabelShipping
+    events:
+      - http:
+          path: /v1/etiqueta-paquete/{id_solicitud}/estado
+          method: get          
 
 plugins:
   - serverless-offline

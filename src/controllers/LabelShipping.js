@@ -26,6 +26,12 @@ const createLabelShipping = async (event) => {
     return new ServicesResponseDto(HttpConstants.succefullResponse, response)
 }
 
+const getStatusLabelShipping = async (event) =>{
+    const request = new ServicesRequestDto(event)
+    return new ServicesResponseDto(HttpConstants.succefullResponse,request)
+}
+
 module.exports = {
-    createLabelShipping
+    createLabelShipping,
+    getStatusLabelShipping
 }  

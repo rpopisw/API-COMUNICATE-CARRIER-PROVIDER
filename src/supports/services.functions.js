@@ -64,12 +64,7 @@ const uploadFileToS3 = async(file,nameFile)=>{
         Key: `${nameFile}.zip`,
         Body: file
     };
-    s3.upload(params, function(err, data) {
-        if (err) {
-            throw err;
-        }
-        return data.Location
-    });
+    return await s3.upload(params).promise();
 }
 
 module.exports = { 
