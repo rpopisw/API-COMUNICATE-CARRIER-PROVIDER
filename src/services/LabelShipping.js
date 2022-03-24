@@ -45,7 +45,7 @@ const getStatusLabelShipping = async (codeLabel) => {
 const getUrlLabelShipping = async (codeLabel) => {
     const codeUrlLabel = await MultiCarrierShippingDbDao.getUrlLabelShipping(codeLabel)
     if (codeUrlLabel) {
-        const zipFileBase64 = await ServiceSupport.dowloadFileToS3(codeUrlLabel.code.label)
+        const zipFileBase64 = await S3Dao.dowloadFileToS3(codeUrlLabel.code.label)
         return {
             data: zipFileBase64
         }
