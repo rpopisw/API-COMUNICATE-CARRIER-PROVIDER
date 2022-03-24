@@ -32,6 +32,15 @@ const getStatusLabelShipping = async(codeLabel)=>{
       return result.data[0]
 }
 
+const getUrlLabelShipping = async(codeLabel)=>{
+      const db = MysqlCloudDatabase.getInstance()
+      const result = await db.executeQuery({
+            statement: Query.SEARCH_URL_LABEL_SHIPPING,
+            values: { codeLabel },
+      })
+      return result.data[0]
+}
+
 const saveMasterLabelShipping = async (parameters)=>{
       const db = MysqlCloudDatabase.getInstance()
       return await db.executeInsert({
@@ -62,5 +71,6 @@ module.exports = {
       updateStatusMasterLabelShipping,
       getDataMarterLabelShipping,
       updateUrlMasterLabelShipping,
-      getStatusLabelShipping
+      getStatusLabelShipping,
+      getUrlLabelShipping
 }

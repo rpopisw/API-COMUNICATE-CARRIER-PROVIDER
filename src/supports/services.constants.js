@@ -9,7 +9,12 @@ const status_label ={
     error: 'error'
 }
 
+const message = {
+    messageNotfound : 'No se encontro el registro solicitado'
+}
+
 module.exports = {
     services,
-    status_label
+    status_label,
+    message
 }

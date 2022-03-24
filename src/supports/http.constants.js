@@ -3,6 +3,11 @@ const succefullResponse = {
     headers: 'application/json'
 }
 
+const succefullResponseBase64 = {
+    statusCode: 200,
+    headers: 'application/zip'
+}
+
 const errorRequestResponse = {
     statusCode: 400,
     headers: 'application/json'
@@ -11,5 +16,6 @@ const errorRequestResponse = {
 
 module.exports = {
     succefullResponse,
-    errorRequestResponse
+    errorRequestResponse,
+    succefullResponseBase64
 }

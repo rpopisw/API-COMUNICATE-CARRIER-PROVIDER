@@ -26,6 +26,12 @@ functions:
       - http:
           path: /v1/etiqueta-paquete/{id_solicitud}/estado
           method: get          
+  dowloadZipLabelShipping:
+    handler: src/controllers/LabelShipping.dowloadZipLabelShipping
+    events:
+      - http:
+          path: /v1/etiqueta-paquete/{id_solicitud}/file-zip
+          method: get                    
 
 plugins:
   - serverless-offline
