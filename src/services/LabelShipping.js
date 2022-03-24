@@ -26,6 +26,15 @@ const createLabelShipping = async (id, orders) => {
     }
 }
 
+const getStatusLabelShipping = async (codeLabel)=>{
+    const statusLabel = await MultiCarrierShippingDbDao.getStatusLabelShipping(codeLabel)
+    return {
+        status: statusLabel.status,
+        url: statusLabel.url.s3
+    }
+}
+
 module.exports = {
-    createLabelShipping
+    createLabelShipping,
+    getStatusLabelShipping
 }  
