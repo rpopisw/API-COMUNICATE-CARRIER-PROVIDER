@@ -14,8 +14,8 @@ provider:
     SECRET_ID: AKIA6KXC4TXUHMSEGHPN
     SECRET_KEY: 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
 functions:
-  hello:
-    handler: src/index.createLabelShipping
+  createLabelShipping:
+    handler: src/controllers/LabelShipping.createLabelShipping
     events:
       - http:
           path: /v1/etiqueta-paquete
