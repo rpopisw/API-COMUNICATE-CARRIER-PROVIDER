@@ -1,16 +1,16 @@
 const succefullResponse = {
     statusCode: 200,
-    headers: 'application/json'
+    headers: { "content-type": "application/json" },
 }
 
 const succefullResponseBase64 = {
     statusCode: 200,
-    headers: 'application/zip'
+    headers: { "content-type": "application/zip" },
 }
 
 const errorRequestResponse = {
     statusCode: 400,
-    headers: 'application/json'
+    headers: { "content-type": "application/json" },
 }
 
 
