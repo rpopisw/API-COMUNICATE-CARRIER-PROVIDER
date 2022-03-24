@@ -20,12 +20,21 @@ const createLabelShipping = async (id, orders) => {
     const bufferZip = await ServiceSupport.getZipFile(urlsPdf)
     const dataMasterLabeShipping = await MultiCarrierShippingDbDao.getDataMarterLabelShipping(id)
     const urlS3 = await ServiceSupport.uploadFileToS3(bufferZip,dataMasterLabeShipping)
-    await MultiCarrierShippingDbDao.updateUrlMasterLabelShipping(id,urlS3)
+    await MultiCarrierShippingDbDao.updateUrlMasterLabelShipping(id,urlS3.Location)
     return {
         idSolicitud : dataMasterLabeShipping
     }
 }
 
+const getStatusLabelShipping = async (codeLabel)=>{
+    const statusLabel = await MultiCarrierShippingDbDao.getStatusLabelShipping(codeLabel)
+    return {
+        status: statusLabel.status,
+        url: statusLabel.url.s3
+    }
+}
+
 module.exports = {
-    createLabelShipping
+    createLabelShipping,
+    getStatusLabelShipping
 }  

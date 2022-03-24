@@ -6,6 +6,10 @@ module.exports = {
     where name = :name
     `,
 
+    SEARCH_STATUS_MASTER_LABEL_SHIPPING: `
+    Select status,url_s3 from master_label_shipping where code_label = :codeLabel
+    `,
+
     SEARCH_MASTER_LABEL_SHIPPING: `
     Select code_label from master_label_shipping where id = :id
     `,
