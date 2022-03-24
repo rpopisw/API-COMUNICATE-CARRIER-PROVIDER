@@ -1,0 +1,116 @@
+{
+    "resultInsertMasterLabel": {
+        "identifier": 37
+    },
+    "payload": {
+        "body": {
+            "payload": {
+                "data": [
+                    {
+                        "carrier": "fake_carrier",
+                        "shipment": {
+                            "address_from": {
+                                "name": "Fernando López",
+                                "street1": "Av. Principal #123",
+                                "city": "Azcapotzalco",
+                                "province": "Ciudad de México",
+                                "postal_code": "02900",
+                                "country_code": "MX"
+                            },
+                            "address_to": {
+                                "name": "Isabel Arredondo",
+                                "street1": "Av. Las Torres #123",
+                                "city": "Puebla",
+                                "province": "Puebla",
+                                "postal_code": "72450",
+                                "country_code": "MX"
+                            },
+                            "parcels": [
+                                {
+                                    "length": 40,
+                                    "width": 40,
+                                    "height": 40,
+                                    "dimensions_unit": "CM",
+                                    "weight": 5,
+                                    "weight_unit": "KG"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "carrier": "fake_carrier",
+                        "shipment": {
+                            "address_from": {
+                                "name": "Verónica Bravo",
+                                "street1": "Av. Adolfo Prieto #157-6",
+                                "city": "Nuevo León",
+                                "province": "Monterrey",
+                                "postal_code": "64010",
+                                "country_code": "MX"
+                            },
+                            "address_to": {
+                                "name": "Jorge Mendoza",
+                                "street1": "Calle 62 #2568",
+                                "city": "Mérida",
+                                "province": "Yucatán",
+                                "postal_code": "97000",
+                                "country_code": "MX"
+                            },
+                            "parcels": [
+                                {
+                                    "length": 102,
+                                    "width": 52,
+                                    "height": 80,
+                                    "dimensions_unit": "CM",
+                                    "weight": 7.5,
+                                    "weight_unit": "KG"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "carrier": "fake_carrier",
+                        "shipment": {
+                            "address_from": {
+                                "name": "Leonardo Rodríguez",
+                                "street1": "Calz. Juárez #58",
+                                "city": "Morelia",
+                                "province": "Michoacan",
+                                "postal_code": "58070",
+                                "country_code": "MX"
+                            },
+                            "address_to": {
+                                "name": "Ruben Arroyo",
+                                "street1": "Calle Esteban Loera #428",
+                                "city": "Guadalajara",
+                                "province": "Jalisco",
+                                "postal_code": "44380",
+                                "country_code": "MX"
+                            },
+                            "parcels": [
+                                {
+                                    "length": 52,
+                                    "width": 98,
+                                    "height": 52,
+                                    "dimensions_unit": "CM",
+                                    "weight": 3.68,
+                                    "weight_unit": "KG"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "informationCarrier": [{"name":"fake_carrier","url":"https://fake-carrier-api.skydropx.com/v1/labels","token":"vgEOaYn0LItk5K9FBEP9j9EUjZwcZvvL"}],
+    "codeLabel": "6057f720-cc6f-45c2-a7bb-8ff1043d591c",
+    "responseApiCarrier":{"data":{"id":"15071","type":"labels","attributes":{"shipment_id":15071,"tracking_number":"287E3308CC4A9076476F","file_url":"https://fake-carrier.s3.amazonaws.com/t3grapzny05adw0v8z3ssz51wdf7","created_at":"2022-03-24T13:35:10.321Z"}}},
+    "responseAwsS3": {"ETag":"\"6057f720-cc6f-45c2-a7bb-8ff1043d591c\"","Location":"https://reto-skydropx.s3.amazonaws.com/6057f720-cc6f-45c2-a7bb-8ff1043d591c.zip","key":"67ede74b-e50d-4f51-8c0f-5005477a454d.zip","Key":"67ede74b-e50d-4f51-8c0f-5005477a454d.zip","Bucket":"reto-skydropx"},
+    "responseServices":{
+        "payload": {
+            "idSolicitud": "6057f720-cc6f-45c2-a7bb-8ff1043d591c"
+        }
+    },
+    "updatedLabel":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"(Rows matched: 1  Changed: 1  Warnings: 0","protocol41":true,"changedRows":1}
+}

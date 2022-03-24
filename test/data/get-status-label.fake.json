@@ -1,0 +1,19 @@
+{
+    "responseStatusLabelShipping": {
+        "payload": {
+            "status": "completed",
+            "url": "https://reto-skydropx.s3.amazonaws.com/6057f720-cc6f-45c2-a7bb-8ff1043d591c.zip"
+        }
+    },
+    "statusLableShipping":{
+        "status":"completed","url":{"s3":"https://reto-skydropx.s3.amazonaws.com/6057f720-cc6f-45c2-a7bb-8ff1043d591c.zip"}
+    },
+    "requestGetLabelShipping": {
+        "body": null,
+        "httpMethod": "GET",
+        "path": "/v1/etiqueta-paquete/6057f720-cc6f-45c2-a7bb-8ff1043d591c/estado",
+        "pathParameters": {
+            "id_solicitud": "6057f720-cc6f-45c2-a7bb-8ff1043d591c"
+        }
+    }
+}

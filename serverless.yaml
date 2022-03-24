@@ -1,0 +1,38 @@
+service: Multi-carrier Shipping
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  profile: devProfile
+  environment:
+    USERNAME_DATABASE: admin
+    PASSWORD_DATABASE: 12345678
+    NAME_DATABASE: Multi_carrier_Shipping
+    HOST_DATABASE: database-2.czwglemjvcro.us-east-1.rds.amazonaws.com
+    BUCKET_NAME: reto-skydropx
+    SECRET_ID: AKIA6KXC4TXUHMSEGHPN
+    SECRET_KEY: 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
+functions:
+  createLabelShipping:
+    handler: src/controllers/LabelShipping.createLabelShipping
+    events:
+      - http:
+          path: /v1/etiqueta-paquete
+          method: post
+  getStatusLabelShipping:
+    handler: src/controllers/LabelShipping.getStatusLabelShipping
+    events:
+      - http:
+          path: /v1/etiqueta-paquete/{id_solicitud}/estado
+          method: get          
+  dowloadZipLabelShipping:
+    handler: src/controllers/LabelShipping.dowloadZipLabelShipping
+    events:
+      - http:
+          path: /v1/etiqueta-paquete/{id_solicitud}/file-zip
+          method: get                    
+
+plugins:
+  - serverless-offline
+
