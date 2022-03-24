@@ -1,4 +1,4 @@
-service: Multi-carrier Shipping
+service: Multi-carrier-Shipping
 
 provider:
   name: aws
