@@ -32,7 +32,14 @@ const getStatusLabelShipping = async (event) =>{
     return new ServicesResponseDto(HttpConstants.succefullResponse,response)
 }
 
+const dowloadZipLabelShipping = async (event)=>{
+    const request = new ServicesRequestDto(event)
+    const response = await Service.getUrlLabelShipping(request.pathParameters.id_solicitud)
+    return new ServicesResponseDto(HttpConstants.succefullResponseBase64,response)
+}
+
 module.exports = {
     createLabelShipping,
-    getStatusLabelShipping
+    getStatusLabelShipping,
+    dowloadZipLabelShipping
 }  
