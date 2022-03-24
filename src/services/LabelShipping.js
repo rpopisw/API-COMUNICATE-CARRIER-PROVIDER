@@ -1,6 +1,7 @@
 const MultiCarrierShippingDbDao = require('../daos/MultiCarrierShippingDbDao')
 const ServicesConstants = require('../supports/services.constants')
 const ServiceSupport = require('../supports/services.functions')
+const S3Dao = require('../daos/S3Dao')
 
 const createLabelShipping = async (id, orders) => {
     const parameters = {
@@ -8,6 +9,7 @@ const createLabelShipping = async (id, orders) => {
         status: ServicesConstants.status_label.processing
     }
     await MultiCarrierShippingDbDao.updateStatusMasterLabelShipping(parameters)
+    const codeLabel = await MultiCarrierShippingDbDao.getDataMarterLabelShipping(id)
     const informationCarrier = await MultiCarrierShippingDbDao.getCarrierApiInformation(ServicesConstants.services)
     const urlsPdf = await ServiceSupport.getListUrlPdf(informationCarrier, orders)
     if (!urlsPdf.error) {
@@ -18,11 +20,10 @@ const createLabelShipping = async (id, orders) => {
         await MultiCarrierShippingDbDao.updateStatusMasterLabelShipping(parameters)
     }
     const bufferZip = await ServiceSupport.getZipFile(urlsPdf)
-    const dataMasterLabeShipping = await MultiCarrierShippingDbDao.getDataMarterLabelShipping(id)
-    const urlS3 = await ServiceSupport.uploadFileToS3(bufferZip, dataMasterLabeShipping)
+    const urlS3 = await S3Dao.uploadFileToS3(bufferZip, codeLabel)
     await MultiCarrierShippingDbDao.updateUrlMasterLabelShipping(id, urlS3.Location)
     return {
-        idSolicitud: dataMasterLabeShipping
+        idSolicitud: codeLabel
     }
 }
 
@@ -44,7 +45,7 @@ const getStatusLabelShipping = async (codeLabel) => {
 const getUrlLabelShipping = async (codeLabel) => {
     const codeUrlLabel = await MultiCarrierShippingDbDao.getUrlLabelShipping(codeLabel)
     if (codeUrlLabel) {
-        const zipFileBase64 = await ServiceSupport.dowloadFileToS3(codeUrlLabel.code.label)
+        const zipFileBase64 = await S3Dao.dowloadFileToS3(codeUrlLabel.code.label)
         return {
             data: zipFileBase64
         }

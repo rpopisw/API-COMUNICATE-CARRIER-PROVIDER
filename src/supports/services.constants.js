@@ -10,7 +10,8 @@ const status_label ={
 }
 
 const message = {
-    messageNotfound : 'No se encontro el registro solicitado'
+    messageNotfound : 'No se encontro el registro solicitado',
+    messageErrorServer: 'Ocurrio un problema en el proceso' 
 }
 
 module.exports = {
