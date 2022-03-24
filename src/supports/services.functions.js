@@ -33,13 +33,12 @@ const getZipFile = async (data) => {
 const getListUrlPdf = async (informationCarrier, orders) => {
     try {
         const [{ url, token }] = informationCarrier
-        const carrierApiDao = new CarrierApiDao(url, token)
         const responses = orders.map(async (order) => {
             let requestCarrierApiDto = new RequestCarrierApiDto(order.shipment)
-            let responseApicarrier = await carrierApiDao.generatedShippingLabel(requestCarrierApiDto)
+            let responseApicarrier = await CarrierApiDao.generatedShippingLabel(requestCarrierApiDto,url, token)
             if (responseApicarrier.error) {
                 while (responseApicarrier.error) {
-                    responseApicarrier = await carrierApiDao.generatedShippingLabel(requestCarrierApiDto)
+                    responseApicarrier = await CarrierApiDao.generatedShippingLabel(requestCarrierApiDto,url, token)
                 }
             }
             return {
@@ -54,18 +53,7 @@ const getListUrlPdf = async (informationCarrier, orders) => {
     }
 }
 
-const uploadFileToS3 = async(file,nameFile)=>{
-    const s3 = new AWS.S3({
-        accessKeyId: process.env.SECRET_ID,
-        secretAccessKey: process.env.SECRET_KEY,
-    });
-    const params = {
-        Bucket: process.env.BUCKET_NAME,
-        Key: `${nameFile}.zip`,
-        Body: file
-    };
-    return await s3.upload(params).promise();
-}
+
 
 const dowloadFileToS3 = async(codeUrlLabel)=>{
     const s3 = new AWS.S3({
@@ -83,6 +71,5 @@ const dowloadFileToS3 = async(codeUrlLabel)=>{
 module.exports = { 
     getZipFile,
     getListUrlPdf,
-    uploadFileToS3,
     dowloadFileToS3
 }

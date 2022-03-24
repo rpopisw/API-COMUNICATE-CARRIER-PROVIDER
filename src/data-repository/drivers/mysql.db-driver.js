@@ -58,7 +58,6 @@ class MySqlDriver {
         const value = connection.escape(values[tp]);
         bindSql = bindSql.replace(new RegExp(`(:${tp})\\b`, 'g'), value);
       });
-      console.log(bindSql)
       return bindSql;
     } catch (error) {
       new DataRepositoryException(
