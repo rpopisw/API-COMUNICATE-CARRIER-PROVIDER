@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648151095922" clover="3.2.0">
-  <project timestamp="1648151095922" name="All files">
-    <metrics statements="132" coveredstatements="99" conditionals="14" coveredconditionals="3" methods="22" coveredmethods="14" elements="168" coveredelements="116" complexity="0" loc="132" ncloc="132" packages="4" files="9" classes="9"/>
+<coverage generated="1648152815441" clover="3.2.0">
+  <project timestamp="1648152815441" name="All files">
+    <metrics statements="133" coveredstatements="106" conditionals="14" coveredconditionals="4" methods="22" coveredmethods="16" elements="169" coveredelements="126" complexity="0" loc="133" ncloc="133" packages="4" files="9" classes="9"/>
     <package name="src">
       <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="validation.js" path="C:\Users\rpopi\Documents\proyectos\SkydropX_Developer_Challenges\src\validation.js">
         <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
@@ -18,23 +18,23 @@
         <line num="47" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="32" coveredstatements="23" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <metrics statements="32" coveredstatements="26" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
       <file name="LabelShipping.js" path="C:\Users\rpopi\Documents\proyectos\SkydropX_Developer_Challenges\src\controllers\LabelShipping.js">
-        <metrics statements="32" coveredstatements="23" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
+        <metrics statements="32" coveredstatements="26" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
@@ -48,26 +48,26 @@
         <line num="28" count="1" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="31" coveredstatements="20" conditionals="10" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <metrics statements="32" coveredstatements="24" conditionals="10" coveredconditionals="2" methods="3" coveredmethods="2"/>
       <file name="LabelShipping.js" path="C:\Users\rpopi\Documents\proyectos\SkydropX_Developer_Challenges\src\services\LabelShipping.js">
-        <metrics statements="31" coveredstatements="20" conditionals="10" coveredconditionals="1" methods="3" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
+        <metrics statements="32" coveredstatements="24" conditionals="10" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
@@ -80,20 +80,21 @@
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="48" count="0" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="49" count="0" type="stmt"/>
-        <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="54" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="61" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.supports">
@@ -104,46 +105,46 @@
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
       </file>
       <file name="error.constants.js" path="C:\Users\rpopi\Documents\proyectos\SkydropX_Developer_Challenges\src\supports\error.constants.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
       </file>
       <file name="http.constants.js" path="C:\Users\rpopi\Documents\proyectos\SkydropX_Developer_Challenges\src\supports\http.constants.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
       </file>
       <file name="query.constants.js" path="C:\Users\rpopi\Documents\proyectos\SkydropX_Developer_Challenges\src\supports\query.constants.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
       </file>
       <file name="services.constants.js" path="C:\Users\rpopi\Documents\proyectos\SkydropX_Developer_Challenges\src\supports\services.constants.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
       </file>
       <file name="services.functions.js" path="C:\Users\rpopi\Documents\proyectos\SkydropX_Developer_Challenges\src\supports\services.functions.js">
         <metrics statements="40" coveredstatements="32" conditionals="2" coveredconditionals="1" methods="13" coveredmethods="11"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
         <line num="13" count="3" type="stmt"/>
         <line num="14" count="3" type="stmt"/>
-        <line num="15" count="11" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
         <line num="17" count="3" type="stmt"/>
         <line num="18" count="3" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
@@ -152,7 +153,7 @@
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
@@ -165,12 +166,12 @@
         <line num="49" count="1" type="stmt"/>
         <line num="50" count="3" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
         <line num="59" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
         <line num="67" count="0" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
-        <line num="71" count="1" type="stmt"/>
+        <line num="71" count="2" type="stmt"/>
       </file>
     </package>
   </project>
