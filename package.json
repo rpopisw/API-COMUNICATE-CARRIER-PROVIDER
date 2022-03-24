@@ -1,0 +1,42 @@
+{
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/daos",
+      "<rootDir>/src/dtos",
+      "<rootDir>/src/data-repository"
+
+    ]
+  },
+  "name": "SkydropX_Developer_Challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serverless offline",
+    "test": "jest --coverage ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpopisw/SkydropX_Developer_Challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpopisw/SkydropX_Developer_Challenges/issues"
+  },
+  "homepage": "https://github.com/rpopisw/SkydropX_Developer_Challenges#readme",
+  "devDependencies": {
+    "serverless-offline": "^8.5.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "aws-sdk": "^2.1099.0",
+    "axios": "^0.26.1",
+    "https": "^1.0.0",
+    "jest": "^27.5.1",
+    "joi": "^17.6.0",
+    "mysql": "^2.18.1",
+    "uuid": "^8.3.2"
+  }
+}
